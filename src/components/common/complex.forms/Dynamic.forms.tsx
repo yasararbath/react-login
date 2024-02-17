@@ -25,7 +25,7 @@ export const DyanmicForms = ({ fields }: FormProps) => {
       <FormProvider {...formMethods}>
         {fields.map((section:any, index:any) => (
           <div className="section" key={index}>
-            <h2>{section.label}</h2>
+            <h2>{ section.type === 'group' && section.label}</h2>
             {section.type === 'group' ? section.fields.map((field:any, i:any) => (
               <div className={field.fieldName === 'gender' ?"field totals-tag" : 'field'}  key={i}>
                 <label htmlFor={field.fieldName}>{field.label}</label>
