@@ -47,6 +47,7 @@ const Register = ()=>{
     setFormErrors(validateForm(userDetails));
     setIsSubmit(true);
     setUserDetails(userDetails)
+    navigate("/dashboard", { replace: true });
 
  };
  useEffect(() => {

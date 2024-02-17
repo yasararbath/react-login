@@ -38,6 +38,9 @@ const Login = ({setUserState}:any)=>{
         // if (!formErrors) {
 
         // }
+        const userS= {_id:3,user:'test'}
+        setUserState(userS);
+        navigate("/dashboard", { replace: true });
     };
     useEffect( () => {
         if (Object.keys(formErrors).length === 0 && isSubmit) {
