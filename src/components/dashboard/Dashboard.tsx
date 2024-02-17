@@ -1,5 +1,6 @@
-import { DyanmicForms } from "../common/Dynamic.forms";
-import { fields } from "../common/data";
+import { DyanmicForms } from "../common/complex.forms/Dynamic.forms";
+import { fields } from "../common/complex.forms/data";
+
 
 export const Dashboard=()=> {
     return (
